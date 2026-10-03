@@ -1,5 +1,33 @@
 # Changelog
 
+## 1.0.0 (2026-10-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Rework errors surfaced when encountering files or symlinks ([#4](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/4))
+* Ensure correct node version >=10.13.0 (fixes #10) ([#12](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/12))
+* Switch to streamx & remove `obj` API (closes #7) ([#11](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/11))
+* Stop using `process.umask()` & fallback to node default mode ([#6](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/6))
+* Upgrade scaffold, dropping node <10 support
+
+### Features
+
+* Ensure correct node version &gt;=10.13.0 (fixes [#10](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/10)) ([#12](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/12)) ([e5690b4](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/commit/e5690b488bfd093f09a59889dbced36ff85c8878))
+* Stop using `process.umask()` & fallback to node default mode ([#6](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/6)) ([f78d60b](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/commit/f78d60b12da14db2639d0964f81f254f16b20ba5))
+* Switch to streamx & remove `obj` API (closes [#7](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/7)) ([#11](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/11)) ([072d026](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/commit/072d0262d167bd7bbacd875b032835c60661f6f8))
+
+
+### Bug Fixes
+
+* Continue upon ENOSUP chmod failures ([#19](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/19)) ([b63196c](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/commit/b63196cea9a2c201f61ce6c449aac5199ab52676))
+* Rework errors surfaced when encountering files or symlinks ([#4](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/issues/4)) ([3fc3dee](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/commit/3fc3dee4ef6108271f8837e9616652e9e8c6274c))
+
+
+### Miscellaneous Chores
+
+* Upgrade scaffold, dropping node &lt;10 support ([bda1dee](https://github.com/FotoVerite/gulp-fs-mkdirp-stream/commit/bda1dee735c61617a5f51ac4e3871969a675d1f5))
+
 ### [2.0.1](https://www.github.com/gulpjs/fs-mkdirp-stream/compare/v2.0.0...v2.0.1) (2022-09-17)
 
 
